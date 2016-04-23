@@ -1,5 +1,6 @@
 package f2.spw;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -16,6 +17,7 @@ public class GamePanel extends JPanel {
 	public GamePanel() { 
 		bi = new BufferedImage(400, 650, BufferedImage.TYPE_INT_ARGB); //set buffer size of game area
 		big = (Graphics2D) bi.getGraphics();
+		big.setBackground(Color.BLACK); //set background color
 	}
 
 	public void updateGameUI(){

@@ -1,4 +1,3 @@
-//set position, appearance and size of spaceship
 package f2.spw;
 
 import java.awt.Graphics2D;

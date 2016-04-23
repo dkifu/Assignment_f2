@@ -1,7 +1,7 @@
 package f2.spw;
 
+import java.awt.Color;
 import java.awt.Graphics2D;
-
 public class SpaceShip extends Sprite{
 
 	int step = 8;
@@ -13,7 +13,9 @@ public class SpaceShip extends Sprite{
 
 	@Override
 	public void draw(Graphics2D g) {
+		g.setColor(Color.GREEN);
 		g.fillRect(x, y, width, height);
+		
 		
 	}
 
