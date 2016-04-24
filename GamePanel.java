@@ -20,11 +20,14 @@ public class GamePanel extends JPanel {
 		big.setBackground(Color.BLACK); //set background color
 	}
 
-	public void updateGameUI(){
+	public void updateGameUI(GameReporter reporter){
 
 		
 		big.clearRect(0, 0, 400, 650); //set size of game area
 		
+		big.setColor(Color.WHITE);		
+		big.drawString(String.format("%08d", reporter.getScore()), 300, 20); //score display
+
 		for(Sprite s : sprites){
 			s.draw(big);
 		}
